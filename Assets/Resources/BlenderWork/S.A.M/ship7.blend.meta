@@ -1,0 +1,128 @@
+fileFormatVersion: 2
+guid: 325f04c0f84f49144b387f60b2c0267d
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: MountBackBottom
+    100002: MountBackBottomLeft
+    100004: MountBackBottomRight
+    100006: MountBackLeft
+    100008: MountBackRight
+    100010: MountBackTop
+    100012: MountBackTopLeft
+    100014: MountBackTopRight
+    100016: MountConsoleLeft1
+    100018: MountConsoleLeft2
+    100020: MountConsoleRight1
+    100022: MountConsoleRight2
+    100024: MountPilot
+    100026: MountSensor
+    100028: MountSensor_001
+    100030: //RootNode
+    100032: ThrusterPanel
+    100034: Windshield
+    100036: MountBackBackward
+    100038: MountConsoleFront
+    100040: MountFrontBottom
+    100042: MountFrontForward
+    100044: MountFrontLeft
+    100046: MountFrontRight
+    100048: MountFrontTop
+    100050: Screen
+    100052: ScreenFrame
+    400000: MountBackBottom
+    400002: MountBackBottomLeft
+    400004: MountBackBottomRight
+    400006: MountBackLeft
+    400008: MountBackRight
+    400010: MountBackTop
+    400012: MountBackTopLeft
+    400014: MountBackTopRight
+    400016: MountConsoleLeft1
+    400018: MountConsoleLeft2
+    400020: MountConsoleRight1
+    400022: MountConsoleRight2
+    400024: MountPilot
+    400026: MountSensor
+    400028: MountSensor_001
+    400030: //RootNode
+    400032: ThrusterPanel
+    400034: Windshield
+    400036: MountBackBackward
+    400038: MountConsoleFront
+    400040: MountFrontBottom
+    400042: MountFrontForward
+    400044: MountFrontLeft
+    400046: MountFrontRight
+    400048: MountFrontTop
+    400050: Screen
+    400052: ScreenFrame
+    2300000: //RootNode
+    2300002: ThrusterPanel
+    2300004: Windshield
+    2300006: Screen
+    2300008: ScreenFrame
+    3300000: //RootNode
+    3300002: ThrusterPanel
+    3300004: Windshield
+    3300006: Screen
+    3300008: ScreenFrame
+    4300000: Ship
+    4300002: Windshield
+    4300004: ThrusterPanel
+    4300006: Screen
+    4300008: ScreenFrame
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

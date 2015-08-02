@@ -1,0 +1,24 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\Simulation.cs">
+    <Files>
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\ConfigurationSetting.cs" Line="13" Column="4" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\UnitySimulation.cs" Line="22" Column="46" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\UnityHardware.cs" Line="40" Column="3" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\Hardware.cs" Line="45" Column="3" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\EventManager.cs" Line="29" Column="4" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\Event.cs" Line="24" Column="38" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\UnityConfigurationFile.cs" Line="63" Column="4" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\Configuration.cs" Line="52" Column="34" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\Simulation.cs" Line="61" Column="52" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\EventType.cs" Line="37" Column="12" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\HardwareManager.cs" Line="34" Column="1" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\UnityLogger.cs" Line="17" Column="18" />
+      <File FileName="..\..\..\Users\Justin\Documents\EscapeGames_JourneyToTheCenter\Assets\IHardware.cs" Line="31" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

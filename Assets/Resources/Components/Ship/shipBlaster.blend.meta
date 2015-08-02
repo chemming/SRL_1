@@ -1,0 +1,109 @@
+fileFormatVersion: 2
+guid: bd6935853e4fb0d45ba5cef36b1e2dda
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Cube
+    100002: MountBackBottom
+    100004: MountBackBottomLeft
+    100006: MountBackBottomRight
+    100008: MountBackLeft
+    100010: MountBackRight
+    100012: MountBackTop
+    100014: MountBackTopLeft
+    100016: MountBackTopRight
+    100018: MountConsoleLeft1
+    100020: MountConsoleLeft2
+    100022: MountConsoleRight1
+    100024: MountConsoleRight2
+    100026: MountPilot
+    100028: MountSensor
+    100030: MountSensor_001
+    100032: //RootNode
+    100034: ThrusterPanel
+    100036: Windshield
+    400000: Cube
+    400002: MountBackBottom
+    400004: MountBackBottomLeft
+    400006: MountBackBottomRight
+    400008: MountBackLeft
+    400010: MountBackRight
+    400012: MountBackTop
+    400014: MountBackTopLeft
+    400016: MountBackTopRight
+    400018: MountConsoleLeft1
+    400020: MountConsoleLeft2
+    400022: MountConsoleRight1
+    400024: MountConsoleRight2
+    400026: MountPilot
+    400028: MountSensor
+    400030: MountSensor_001
+    400032: //RootNode
+    400034: ThrusterPanel
+    400036: Windshield
+    2300000: Cube
+    2300002: ThrusterPanel
+    2300004: Windshield
+    2300006: //RootNode
+    3300000: Cube
+    3300002: ThrusterPanel
+    3300004: Windshield
+    3300006: //RootNode
+    4300000: Cube
+    4300002: Windshield
+    4300004: ThrusterPanel
+    4300006: Blaster
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

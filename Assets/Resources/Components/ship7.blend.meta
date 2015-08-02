@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: faadf7fdabe2cb14bb7b5c99bebf1098
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: MountBackBackward
+    100002: MountBackBottom
+    100004: MountBackBottomLeft
+    100006: MountBackBottomRight
+    100008: MountBackLeft
+    100010: MountBackRight
+    100012: MountBackTop
+    100014: MountBackTopLeft
+    100016: MountBackTopRight
+    100018: MountConsoleFront
+    100020: MountConsoleLeft1
+    100022: MountConsoleLeft2
+    100024: MountConsoleRight1
+    100026: MountConsoleRight2
+    100028: MountFrontBottom
+    100030: MountFrontForward
+    100032: MountFrontLeft
+    100034: MountFrontRight
+    100036: MountFrontTop
+    100038: MountPilot
+    100040: MountSensor
+    100042: Screen
+    100044: ScreenFrame
+    100046: //RootNode
+    100048: Windshield
+    400000: MountBackBackward
+    400002: MountBackBottom
+    400004: MountBackBottomLeft
+    400006: MountBackBottomRight
+    400008: MountBackLeft
+    400010: MountBackRight
+    400012: MountBackTop
+    400014: MountBackTopLeft
+    400016: MountBackTopRight
+    400018: MountConsoleFront
+    400020: MountConsoleLeft1
+    400022: MountConsoleLeft2
+    400024: MountConsoleRight1
+    400026: MountConsoleRight2
+    400028: MountFrontBottom
+    400030: MountFrontForward
+    400032: MountFrontLeft
+    400034: MountFrontRight
+    400036: MountFrontTop
+    400038: MountPilot
+    400040: MountSensor
+    400042: Screen
+    400044: ScreenFrame
+    400046: //RootNode
+    400048: Windshield
+    2300000: Screen
+    2300002: ScreenFrame
+    2300004: //RootNode
+    2300006: Windshield
+    3300000: Screen
+    3300002: ScreenFrame
+    3300004: //RootNode
+    3300006: Windshield
+    4300000: Ship
+    4300002: Screen
+    4300004: Windshield
+    4300006: ScreenFrame
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

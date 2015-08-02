@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: b1b4ee14e39002c4ca43be14ca2a28fe
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: 11
+    100002: 12
+    100004: 13
+    100006: 14
+    100008: 21
+    100010: 22
+    100012: 23
+    100014: 24
+    100016: 31
+    100018: 32
+    100020: 33
+    100022: 34
+    100024: 41
+    100026: 42
+    100028: 43
+    100030: 44
+    100032: 51
+    100034: 52
+    100036: 53
+    100038: 54
+    100040: 61
+    100042: 62
+    100044: 63
+    100046: 64
+    100048: ArrowDown
+    100050: ArrowUp
+    100052: Check
+    100054: Delete
+    100056: InfoPanel
+    100058: Minus
+    100060: //RootNode
+    400000: 11
+    400002: 12
+    400004: 13
+    400006: 14
+    400008: 21
+    400010: 22
+    400012: 23
+    400014: 24
+    400016: 31
+    400018: 32
+    400020: 33
+    400022: 34
+    400024: 41
+    400026: 42
+    400028: 43
+    400030: 44
+    400032: 51
+    400034: 52
+    400036: 53
+    400038: 54
+    400040: 61
+    400042: 62
+    400044: 63
+    400046: 64
+    400048: ArrowDown
+    400050: ArrowUp
+    400052: Check
+    400054: Delete
+    400056: InfoPanel
+    400058: Minus
+    400060: //RootNode
+    2300000: ArrowDown
+    2300002: ArrowUp
+    2300004: Check
+    2300006: Delete
+    2300008: InfoPanel
+    2300010: Minus
+    2300012: //RootNode
+    3300000: ArrowDown
+    3300002: ArrowUp
+    3300004: Check
+    3300006: Delete
+    3300008: InfoPanel
+    3300010: Minus
+    3300012: //RootNode
+    4300000: Minus
+    4300002: InfoPanel
+    4300004: ArrowUp
+    4300006: Check
+    4300008: Delete
+    4300010: ArrowDown
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

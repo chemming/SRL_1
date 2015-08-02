@@ -1,0 +1,22 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\ActionData.cs">
+    <Files>
+      <File FileName="Assets\Resources\ActionData.cs" Line="151" Column="1" />
+      <File FileName="Assets\Resources\PathDraw.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\WorldThink.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\ActionData.cs" Line="145" Column="4" />
+      <File FileName="Assets\Resources\GoalThink.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\RobotThink.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Think.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\MainGUI.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\ScoreGUI.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\ItemThink.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\BlackMat_Setup.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

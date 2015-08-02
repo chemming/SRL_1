@@ -1,0 +1,230 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+
+public class SensorDisplaySubsystem : ShipSubsystem 
+{
+	protected override void Initalize () 
+	{
+
+	}
+	protected override void Think () 
+	{
+		
+	}
+
+	protected override void ThinkFast () 
+	{
+		
+	}
+
+	/*
+	public GameObject sensorTarget;
+	List<SensorHologram> holograms;
+	
+	int rescanRate = 1;
+	int updateHoloRate = 1;
+	int time = 0;
+	int timeMax = 1;
+	int scanRange = 1;
+	bool systemEnabled = false;
+	
+	float scale = 1f/10f;
+	Vector3 displayOffset;
+	Camera shipCamera;
+	
+	
+	// Use this for initialization
+	protected override void Initalize () 
+	{
+		SubDisplayName= "Sensor System";
+		SubDescription= "Displays A local map of dangers \n and interesting points.";
+		SubCostEnergyPassive=50f;
+		SubShowOnPanel = true;
+		SubStatus=Status.active;
+		
+		holograms = new List<SensorHologram>();
+		displayOffset = new Vector3 (0, 0.005f, 0);
+		scale = 1f/50f;
+		rescanRate = 10;
+		updateHoloRate = 1;
+		time = 0;
+		timeMax = 1000;
+		scanRange = 50;
+		
+		shipCamera = GameObject.Find("ShipCamera").camera;
+		AttachSensor (ship);
+		Activate ();
+
+	}
+	
+	public void Deactivate()
+	{
+		systemEnabled = false;
+
+	}
+	public void Activate()
+	{
+		systemEnabled = true;
+	}
+	
+	
+	public float GetScale()
+	{
+		return scale;
+	}
+	
+	public void AttachSensor(GameObject obj)
+	{
+		if(obj == null)
+			Debug.Log ("Attached Sensor to Null object!");
+		sensorTarget = obj;
+	}
+	
+	private void AdjustHologram(SensorHologram holo,bool force)
+	{
+		//clone.transform.position = new Vector3(0f,0f,0f);
+		//clone.transform.position = this.gameObject.transform.position + displayOffset;
+		//Find minimized velocites and scale
+		GameObject detectedObj = holo.reading;
+		if (detectedObj == null) //Whatever it died
+			return;
+		GameObject clone = holo.hologram;
+		Vector3 objv = new Vector3 (0, 0, 0);
+		Vector3 shpv = new Vector3 (0, 0, 0);
+		if(detectedObj.rigidbody != null)
+		{
+			objv = detectedObj.rigidbody.velocity;
+			shpv = this.transform.parent.parent.parent.gameObject.rigidbody.velocity;
+		}
+		Vector3 shpr = this.gameObject.transform.rotation.eulerAngles;
+		
+		Vector3 relVel;
+		Vector3 newPos;
+		Vector3 newVec;
+		
+		//Find hologram pos
+		newPos = (detectedObj.transform.position - this.gameObject.transform.position) * scale;
+		
+		
+		//Find new velocity
+		objv = new Vector3(objv.x * scale,objv.y*scale,objv.z*scale);
+		shpv = new Vector3(shpv.x * scale,shpv.y*scale,shpv.z*scale);
+		relVel = Quaternion.Euler(shpr.x, shpr.y, shpr.z) * (objv - shpv);
+		newVec = this.transform.parent.parent.parent.gameObject.rigidbody.velocity+relVel;
+		
+		Quaternion ea = this.gameObject.transform.rotation;
+		Quaternion cEa = detectedObj.transform.rotation;
+		//clone.transform.rotation = Quaternion.Euler( cEa.x - ea.x, cEa.y- ea.y, cEa.z - ea.z);
+		//relVel = Quaternion.Euler(shpr.x, shpr.y, shpr.z) * relVel;
+		
+		clone.transform.localPosition = newPos;
+		clone.transform.rotation =  ea*cEa ;
+		//clone.rigidbody.velocity = newVec;
+		//clone.rigidbody.angularVelocity = detectedObj.rigidbody.angularVelocity; 
+	}
+	private void KillHolograms()
+	{
+		while (holograms.Count > 0)
+		{
+			SensorHologram holo = holograms[0];
+			holograms.RemoveAt(0);
+			Destroy(holo.hologram);
+		}
+		holograms.Clear();
+	}
+	
+	
+	private void DoScan()
+	{
+		KillHolograms ();
+		//Delete old ones
+		
+		//Do a fresh scan, and create new ones
+		GameObject[] found = FindGameObjectsInsideRange(sensorTarget.transform.position,scanRange);
+		foreach(GameObject detectedObj in found)
+		{
+			if(detectedObj != this && detectedObj.tag == "robot") //&& detectedObj.tag != "hologram")
+			{
+				GameObject clone;
+				
+				//if(detectedObj.tag != "robot" )
+				//	clone = Instantiate (detectedObj) as GameObject;
+				//if(detectedObj.tag == "robot" )
+				//{
+				//clone = Instantiate (Resources.Load("RobotProject")) as GameObject;
+				clone = CompoundObjectFactory.Create("Robot","ship6",CompoundObjectFactory.COType.Avatar);
+				
+				clone.name = "Avatar";
+				//}
+				
+				clone.tag = "hologram";
+				foreach(MonoBehaviourThink com in clone.GetComponents<MonoBehaviourThink>())
+					com.enabled = false;
+				
+				clone.collider.enabled = false;
+				clone.transform.parent = this.transform; // link the hologram to the display
+				SensorHologram holo = new SensorHologram(detectedObj,clone);
+				
+				Vector3 scaleVec = detectedObj.transform.localScale;
+				scaleVec = new Vector3(scaleVec.x * scale,scaleVec.y*scale,scaleVec.z*scale);
+				clone.transform.localScale = scaleVec;
+				
+				holograms.Add(holo);
+				AdjustHologram(holo,true);
+			}
+		}
+		//sensorTarget = null;
+	}
+	
+	private void UpdateHolograms()
+	{
+		foreach(SensorHologram holo in holograms)
+			AdjustHologram(holo,false);
+	}
+	
+	// Update is called once per frame
+	override protected void ThinkFast ()
+	{
+		
+		if(systemEnabled ==true)
+		{
+			//DroneCameraFollow();
+			UpdateHolograms ();
+		}
+	}
+	
+	// Update is called once per frame
+	protected override void Think () 
+	{
+		if(systemEnabled ==true)
+		{
+			time = (++time)%timeMax;
+			bool rescan = (time%rescanRate) == 0;
+			bool updateHolo = (time%updateHoloRate) == 0;
+			
+			if(sensorTarget != null && rescan == true)
+				DoScan();
+			
+			if(sensorTarget != null && updateHolo == true)
+				UpdateHolograms ();
+		}
+		
+	}
+	
+	GameObject[] FindGameObjectsInsideRange ( Vector3 center, float radius )
+	{
+		Collider[] cols = Physics.OverlapSphere(center, radius);
+		int q = cols.Length; // q = how many colliders were found
+		int lastCol = 0;
+
+		GameObject[] goa = new GameObject[cols.Length];
+		for (int i = 0; i < cols.Length; i++)
+		{
+			goa[i] = cols[i].gameObject;
+		}
+		return goa; // return the GameObject array
+	}*/
+}
+
